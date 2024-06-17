@@ -1,34 +1,27 @@
 Usage
 =====
 
-.. _installation:
-
-Installation
-------------
-
-To use Lumache, first install it using pip:
-
-.. code-block:: console
-
-   (.venv) $ pip install lumache
-
-Creating recipes
+Running Containers
 ----------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+To run your containers, you need to enter your terminal and access the path to the yaml file by
 
-.. autofunction:: lumache.get_random_ingredients
+::
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
+    cd /path/to/your/project/file.ymal
 
-.. autoexception:: lumache.InvalidKindError
 
-For example:
+Then, after everything is set, you must intiate the container by the command
 
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+::
 
+    docker up
+
+
+You can stop the containers from running anything by the command
+
+:: 
+
+    docker down
+
+The user will also need to have both **init.sh** and **crud.sql** to run this CRUD application in the same folder where the .yaml file resides 
