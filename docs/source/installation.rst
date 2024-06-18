@@ -1,7 +1,7 @@
 Installation
 ------------
 
-To install Docker, follow these steps using the apt repositories:
+To install Docker, follow these steps using the apt repositories through command terminal:
 
 1. Add Docker's official GPG key:
 
