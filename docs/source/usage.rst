@@ -25,3 +25,4 @@ You can stop the containers from running anything by the command:
     docker compose down
 
 The user will also need to have both **init.sh** and **crud.sql** to run this CRUD application in the same folder where the .yaml file resides 
+
