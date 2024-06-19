@@ -15,17 +15,12 @@ Be sure to have a crud.sql that creates the database table for your crud and a i
 
 You can use this model for the init.sh
 
-::
+.. code-block:: console
 
-#!/bin/sh
+   (.venv) #!/bin/sh
+   (.venv) docker-php-ext-install mysqli
+   (.venv) docker-php-entrypoint apache2-foreground
 
-::
-
-docker-php-ext-install mysqli
-
-::
-
-docker-php-entrypoint apache2-foreground
 
 Then, after everything is set, you must intiate the container by the command:
 
