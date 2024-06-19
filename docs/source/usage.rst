@@ -15,7 +15,7 @@ Then, after everything is set, you must intiate the container by the command:
 
 ::
 
-    docker compose up
+    docker compose up -d
 
 
 You can stop the containers from running anything by the command:
