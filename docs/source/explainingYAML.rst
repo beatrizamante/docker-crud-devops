@@ -7,9 +7,9 @@ It is necessary to have a CRUD application coded in PHP for this tutorial. Here,
 version: "3.0"
 
 #Services is where you'll load thecontainers needed for the application. On this tutorial, we have container db and container web
-
 services:
   db:
+
 #Image from the OS used to run inside the container
     image: mariadb:lts-jammy
 
