@@ -1,8 +1,7 @@
 Creation of YAML Docker Compose file 
 ----------------------------------------
 
-It is necessary to have a CRUD coded in PHP for this tutorial. In any case, the files used to upload on the application are stored in this tutorial, 
-but lets do a step by step to understand to composer file
+It is necessary to have a CRUD application coded in PHP for this tutorial. Here, we'll learn how to read and build the Docker Compose YAML file
 
 
 version: "3.0"
