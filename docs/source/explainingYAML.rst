@@ -6,6 +6,7 @@ but lets do a step by step to understand to composer file
 
 
 version: "3.0"
+
 #Services is where you'll load the images and containers needed for the application. On this tutorial, we have container db and container web
 
 services:
