@@ -11,6 +11,16 @@ To run your containers, you need to enter your terminal and access the path to t
     cd /path/to/your/project/file.ymal
 
 
+Be sure to have a crud.sql that creates the database table for your crud and a init.sh file that initializes the services inside the containers. These must be in the same folder as the docker compose file.
+
+You can use this model for the init.sh
+
+::
+
+#!/bin/sh
+docker-php-ext-install mysqli
+docker-php-entrypoint apache2-foreground
+
 Then, after everything is set, you must intiate the container by the command:
 
 ::
