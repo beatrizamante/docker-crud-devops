@@ -10,18 +10,24 @@ In this deploy, we are using MariaDb, so it follows this line of code:
 
 #Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) 
-  
-define('DB_SERVER', '<servername>');
-define('DB_USERNAME', '<username>');
-define('DB_PASSWORD', '<password>');
-define('DB_NAME', '<dbname>');
+
+.. code-block:: console
+
+   (.venv) define('DB_SERVER', '<servername>');
+   (.venv) define('DB_USERNAME', '<username>');
+   (.venv) define('DB_PASSWORD', '<password>');
+   (.venv) define('DB_NAME', '<dbname>');
  
 #Attempt to connect to MySQL database 
 
-$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+.. code-block:: console
+
+   (.venv) $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
  
 #Check connection
 
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
+.. code-block:: console
+
+   (.venv) if($link === false){
+   (.venv) die("ERROR: Could not connect. " . mysqli_connect_error());
+   (.venv) }
