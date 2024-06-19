@@ -29,11 +29,11 @@ Then, after everything is set, you must intiate the container by the command:
     docker compose up -d
 
 
-You can stop the containers from running anything by the command:
+You can stop the containers from running any time by the command:
 
 :: 
 
     docker compose down
 
-The user will also need to have both **init.sh** and **crud.sql** to run this CRUD application in the same folder where the .yaml file resides 
+The user will also need to have both **init.sh** and **crud.sql** in the same folder where the .yaml file resides to run this CRUD application  
 
