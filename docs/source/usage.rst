@@ -18,7 +18,13 @@ You can use this model for the init.sh
 ::
 
 #!/bin/sh
+
+::
+
 docker-php-ext-install mysqli
+
+::
+
 docker-php-entrypoint apache2-foreground
 
 Then, after everything is set, you must intiate the container by the command:
